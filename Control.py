@@ -36,12 +36,12 @@ def manual_drive(): #You will use this function to program your ESC if required
         		stop()
         		break
    		elif inp == "control":
-   			 control()
-   		 break
+   			control()
+   		 	break
    		elif inp == "arm":
-   			 arm()
-   			 break    
-    	else:
+   			arm()
+   			break    
+    		else:
         		pi.set_servo_pulsewidth(ESC,inp)
            	 
 def calibrate():   #This is the auto calibration procedure of a normal ESC
@@ -95,8 +95,8 @@ def control():
         		manual_drive()
         		break
    		elif inp == "arm":
-   			 arm()
-   			 break    
+   			arm()
+   			break    
     		else:
         		print "WHAT DID I SAID!! Press a,q,d or e"
        	 
